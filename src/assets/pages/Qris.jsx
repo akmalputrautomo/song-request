@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import gambar from "../img/IMG_2560.JPG.jpeg";
 
 export const Qris = () => {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ export const Qris = () => {
 
         {/* QR Card */}
         <div className="mt-6 rounded-2xl bg-white p-3 shadow-[0_0_40px_rgba(236,72,153,0.35)]">
-          <img src="/qris.png" alt="QRIS" className="w-full rounded-xl" />
+          <img src={gambar} alt="QRIS" className="w-full rounded-xl" />
         </div>
 
         {/* Button */}
