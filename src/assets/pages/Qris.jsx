@@ -15,7 +15,7 @@ export const Qris = () => {
         </div>
 
         {/* Title */}
-        <h1 className="text-center text-2xl font-extrabold tracking-widest">PAK ARIF BAND</h1>
+        <h1 className="text-center text-2xl font-extrabold tracking-widest">RIN’S PROJECT</h1>
 
         <p className="mt-2 text-center text-sm text-gray-400">Scan QRIS atau screenshot untuk memberikan apresiasi</p>
 

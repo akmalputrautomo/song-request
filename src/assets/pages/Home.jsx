@@ -81,7 +81,7 @@ export const Home = () => {
           SONG <br /> REQUEST
         </h1>
 
-        <p className="mt-2 text-lg font-bold text-purple-400">PAK ARIF BAND</p>
+        <p className="mt-2 text-lg font-bold text-purple-400">RIN’S PROJECT</p>
 
         <p className="mt-2 text-sm text-gray-300 text-center">Request lagu favorit kamu untuk diputar</p>
 
