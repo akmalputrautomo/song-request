@@ -34,7 +34,7 @@ export const Home = () => {
     try {
       setLoading(true);
 
-      const response = await fetch(`https://backend-v-project-production.up.railway.app/request`, {
+      const response = await fetch(`https://backend-v-project.vercel.app/api/request`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

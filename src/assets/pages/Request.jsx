@@ -27,12 +27,12 @@ export const Request = () => {
 
   const fetchData = async () => {
     try {
-      const res = await fetch(`https://backend-v-project-production.up.railway.app/request`);
+      const res = await fetch(` https://backend-v-project.vercel.app/api/request`);
       const reqData = await res.json();
       setRequests(reqData);
 
       const commentPromises = reqData.map(async (r) => {
-        const resC = await fetch(`https://backend-v-project-production.up.railway.app/comment/${r.id}`);
+        const resC = await fetch(` https://backend-v-project.vercel.app/api/comment/${r.id}`);
         const cData = await resC.json();
         return { id: r.id, data: Array.isArray(cData) ? cData : [] };
       });
@@ -58,7 +58,7 @@ export const Request = () => {
     if (!window.confirm("Hapus request ini?")) return;
 
     try {
-      await fetch(`https://backend-v-project-production.up.railway.app/request/${id}`, { method: "DELETE" });
+      await fetch(` https://backend-v-project.vercel.app/api/request/${id}`, { method: "DELETE" });
       // 3. Toast Berhasil Hapus
       toast.success("Request berhasil dihapus", toastStyle);
       fetchData();
@@ -71,7 +71,7 @@ export const Request = () => {
     if (!activeComment[id]) return;
 
     try {
-      await fetch(`https://backend-v-project-production.up.railway.app/comment`, {
+      await fetch(` https://backend-v-project.vercel.app/api/comment`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
